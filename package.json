@@ -5,8 +5,12 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "amqplib": "^0.5.3"
+    "amqplib": "^0.5.3",
+    "node-gyp": "^3.8.0",
+    "node-rdkafka": "^2.5.1"
   },
   "scripts": {
+    "build": "node-gyp build",
+    "run:kafka": "node ./src/kafka"
   }
 }
