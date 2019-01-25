@@ -1,7 +1,6 @@
 {
-  "name": "rabbitMQ",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "message-queue",
+  "version": "2.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -10,7 +9,7 @@
     "node-rdkafka": "^2.5.1"
   },
   "scripts": {
-    "build": "node-gyp build",
-    "run:kafka": "node ./src/kafka"
+    "dev": "node ./src/v2/server",
+    "dev:client": "node ./src/v2/client"
   }
 }
